@@ -5,5 +5,7 @@ public class progrem2 {
 
 		progrem1 p =new progrem1();
 		p.prog();
+		
+		
 	}
 }

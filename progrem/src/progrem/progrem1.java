@@ -3,15 +3,17 @@ package progrem;
 import java.util.Scanner;
 
 public class progrem1 {
-public void prog() {
+	public double height;
+	public double weight;
+	public void prog() {
 	Scanner s = new Scanner(System.in);
-	System.out.println("체중입력");
-	int weight = s.nextInt();
+//	System.out.println("체중입력");
+//	int weight = s.nextInt();
 	
-	System.out.println("신장입력");
-	int height = s.nextInt();
-	int a = weight / (height * height);
-			for(int i = 1; i < 300 ; i++) {
+//	System.out.println("신장입력");
+	double height = s.nextDouble();
+	double weight = s.nextDouble();
+	double a = weight / (height * height);
 		if(a < 10) {
 			System.out.println(a + "소모증");
 		}else if( a >=10 && a < 13 ){
@@ -26,5 +28,5 @@ public void prog() {
 			System.out.println(a+"과체중");
 		}
 	}
-	}
+	
 }
