@@ -6,11 +6,11 @@ public class Gamenew {
 public static void main(String[] args) {
 	
 	Player[] player = new Player[5];
-	player[0] = new Player("폴리텍", 10);
-	player[1] = new Player("폴리텍", 10);
-	player[2] = new Player("폴리텍", 10);
-	player[3] = new Player("폴리텍", 11);
-	player[4] = new Player("폴리텍", 21);
+	player[0] = new Player("폴리텍1", 10);
+	player[1] = new Player("폴리텍2", 10);
+	player[2] = new Player("폴리텍3", 10);
+	player[3] = new Player("폴리텍4", 11);
+	player[4] = new Player("폴리텍5", 21);
 	Enemy[] enemy = new Enemy[5];
 	enemy[0] = new Enemy("자바", 100);
 	enemy[1] = new Enemy("자동차", 100);
@@ -22,7 +22,7 @@ public static void main(String[] args) {
 	System.out.println("턴 진행은 엔터를 입력하세요.");
 	for (int i = 0; i < 20; i++) {
 		scanner.nextLine();
-
+		
 		for (int j = 0; j < enemy.length; j++) {
 			if (enemy[j].status()) {
 				int attackPower = player[0].getAttackPower();
@@ -36,7 +36,6 @@ public static void main(String[] args) {
 			}
 		}
 	}
-	
 	int enemyCount = 0;
 	for (int j = 0; j < enemy.length; j++) {
 		if (enemy[j].status()) {
@@ -57,7 +56,5 @@ public static void main(String[] args) {
 		System.out.println("비겼습니다.");
 	}
 }
-
-
 }
 
