@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class rectangle extends Figure{
+public class rectangle implements Figure{
 
 	int width = 0;
 	int row = 0;
@@ -19,9 +19,9 @@ public class rectangle extends Figure{
 		
 		rect = this.width * this.row;
 	}
-	
+	@Override
 	public void printResult() {
-		super.printResult();
+		printResult();
 		System.out.println("사각형의 넓이는" + rect +"입니다.");
 	}
 }
