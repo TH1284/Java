@@ -4,7 +4,9 @@ public class circle implements Figure{
 	
 	int r = 0;
 	double pi = 3.14;
-	String name = "원 넓이 구하기";
+	circle() {
+		String 
+	}
 	@Override
 	public void inputValue() {
 		// TODO Auto-generated method stub

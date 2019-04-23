@@ -5,6 +5,8 @@ public class Student implements	Comparable<Student> {
 	int eng;
 	int math;
 	int total;
+	static final int MOVE_FORWARD = -1;
+	final int MOVE_BACKWARD = 1;
 //  1번문제 ----------------------------여기까지
 	public String print() {
 		return this.name + " 총점 : " + this.total + "(국어 " + this.kor + ", 영어 " + this.eng + ", 수학 " + this.math + ")";
@@ -17,10 +19,10 @@ public class Student implements	Comparable<Student> {
 	@Override
 	public int compareTo(Student o) {
 		if (this.total < o.total) {
-			return -1;
+			return Student.MOVE_FORWARD; // static을 사용했다면 클래스 이름을 써줘야된다.
 		}
 		else if (this.total > o.total) {
-			return 1;
+			return MOVE_BACKWARD;
 		}
 		return 0;
 	}
