@@ -19,7 +19,7 @@ public class Height_Weight {
 			System.out.println("비만");
 		}
 		else if(kaupResult>=24) {
-			System.out.println("고체중");
+			System.out.println("과체중");
 		}
 		else if(kaupResult>20) {
 			System.out.println("정상");

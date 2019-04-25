@@ -24,14 +24,14 @@ public class RunClass {
 		java.util.Random rand = new java.util.Random();
 		Date date = new Date(b);
 //		강제종료가 되지않게 하면 어떻게든 실행이됨
-		try {
-			asdasdasd
-			dfgdfgdfg
-			wqdvfsd
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		
-		
+//		try {
+//			asdasdasd
+//			dfgdfgdfg
+//			wqdvfsd
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//		}
+//		
+//		
 	}
 }
