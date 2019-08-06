@@ -3,48 +3,63 @@ import java.util.Random;
 
 public class RunClass {
 	public static void main(String[] args) {
-//Random rand = new Random();
 		
-//		String a ="abc";
-//		String b = a;
-//		a.hashCode();
-//		b = "cdf";
-//		System.out.println(b.hashCode());
 	
 		
-		
-		Student[] student = new Student[10];
-		for (int i = 0; i < student.length; i++) {
-			student[i] = new Student();
+		System.out.println("중간고사 성적");
+		Student[] student1 = new Student[100];
+		Student[] student2 = new Student[100];
+		for (int i = 0; i < student1.length; i++) {
+			student1[i] = new Student();
 		}
 		Random2 rand = new Random2();
-		for (int i = 0; i < student.length; i++) {
-			student[i].name = (i + 1) + "번 학생";
-//			student[i].kor = rand.nextInt(101);
-//			student[i].eng = rand.nextInt(101);
-//			student[i].math = rand.nextInt(101);
+		for (int i = 0; i < student1.length; i++) {
+			student1[i].name = (i + 1) + "번 학생";
+
 			
-			student[i] = rand.randomStudent(student[i]);
+			student1[i] = rand.randomStudent(student1[i]);
 		}
-// 여기까지 1번문제	-------------------------------
+
 		
 		
-		for (int i = 0; i < student.length; i++) {
-			student[i].total = student[i].kor + student[i].eng + student[i].math;
+		for (int i = 0; i < student1.length; i++) {
+			student1[i].total = student1[i].kor + student1[i].eng + student1[i].math;
 		}
-//		for (int i = 0; i < student.length; i++) {
-//			for (int j = i; j < student.length; j++) {
-//				if (student[i].total < student[j].total) {
-//					Student tmp = student[i];
-//					student[i] = student[j];
-//					student[j] = tmp;
-//				}
-//			}
-//		}
-		Arrays.sort(student); //순위를 나타내기 위해 사용    //implements(규칙서)라는 규칙을 적용시킨다
-//		순위를 오름차순에서 바꾸기 위해서 
-		for (int i = 0; i < student.length; i++) {
-			System.out.println(student[i].print());
+
+		Arrays.sort(student1);
+
+		for (int i = 0; i < student1.length; i++) {
+			System.out.println(student1[i].print());
 		}
+		System.out.println();
+		System.out.println("기말고사 성적");
+		for (int i = 0; i < student2.length; i++) {
+			student2[i] = new Student();	
+		}
+		
+		for (int i = 0; i < student2.length; i++) {
+			student2[i].name = (i + 1) + "번 학생";
+
+			
+			student2[i] = rand.randomStudent(student2[i]);
+		}
+
+		
+		
+		for (int i = 0; i < student2.length; i++) {
+			student2[i].total = student2[i].kor + student2[i].eng + student2[i].math;
+		}
+
+		Arrays.sort(student2);
+
+		for (int i = 0; i < student2.length; i++) {
+			System.out.println(student2[i].print());
+		}
+		System.out.println();
+		System.out.println("성적이 올라간 학생은");
+		for (int i = 0; i < student2.length; i++) {
+			if(student1[i].total < student2[i].total) {
+				System.out.println(student2[i].print());
+			}
 	}
-}
+}}

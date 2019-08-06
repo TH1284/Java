@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class SumNumber {
 	public void doSum() {
-		int number1 = 0;
-		int number2 = 0;
+		int number1;
+		int number2;
 		
 		Scanner scan = new Scanner(System.in);
 		
