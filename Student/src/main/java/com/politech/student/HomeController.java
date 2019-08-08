@@ -73,14 +73,20 @@ public class HomeController {
 		dbCommon.updateData(new Student(name, address, birthdayMonth + "/" + birthdayDay, favoriteColor), idx);
 		return "done";
 	}
-	@RequestMapping(value = "/secession", method = RequestMethod.GET)
-	public String secession(Locale locale, Model model, HttpServletRequest request) {
-		HttpSession session = request.getSession();
-		int idx = (Integer)session.getAttribute("user_idx");
-		Update2 update2 = new Update2();
-		update2.method3(idx);
-		session.invalidate();
-		return "redirect:/";
+//	@RequestMapping(value = "/delete", method = RequestMethod.GET)
+//	public String delete(Locale locale, Model model) {
+//		return "delete";
+//	}
+//	@RequestMapping(value = "/delete_data", method = RequestMethod.GET)
+//	public String deleteData(Locale locale, Model model, @RequestParam("idx") int idx) {
+//		DBCommon<Student> dbCommon = new DBCommon<Student>("c:\\tomcat\\student190527.sqlite", "student");
+//		dbCommon.deleteData(new Student(), idx);
+//		return "done";
+//	}
+	@RequestMapping(value = "/delete", method = RequestMethod.GET)
+	public String deleteData(@RequestParam("idx") int idx) {
+		DBCommon<Student> dbCommon = new DBCommon<Student>("c:\\tomcat\\student190527.sqlite", "student");
+		dbCommon.deleteData(new Student(), idx);
+		return "done";
 	}
-	
 }

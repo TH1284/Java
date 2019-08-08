@@ -7,7 +7,8 @@
 <title>데이터 삭제</title>
 </head>
 <body>
-	<a href="/student">목록으로</a>
-	<a href="/secession">탈퇴하기</a>
+<!-- 	<a href="/student">목록으로</a>
+	<form action="delete_data" method="get">
+	<input type="submit" value="탈퇴하기" /> -->
 </body>
 </html>
