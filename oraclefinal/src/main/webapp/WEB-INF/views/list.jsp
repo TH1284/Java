@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>연습입니다.</title>
 </head>
 <body>
 	<a href="/tt/input">데이터 입력하기</a>

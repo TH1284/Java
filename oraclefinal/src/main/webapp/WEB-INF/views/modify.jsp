@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>데이터 수정</title>
 </head>
 <body>
 	<a href="/tt">목록으로</a>
