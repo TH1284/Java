@@ -14,9 +14,9 @@
 <body>
   <div id="wrap">
     <div class="top_button_section">
-    <a href="/finaltest/create_table" class="top_button">테이블 생성</a>
-      <a href="/finaltest/input" class="top_button">새로운 데이터 입력</a>
-      <a href="/finaltest" class="top_button">HOME</a>
+    <a href="/seasonality/create_table" class="top_button">테이블 생성</a>
+      <a href="/seasonality/input" class="top_button">새로운 데이터 입력</a>
+      <a href="/seasonality" class="top_button">HOME</a>
     </div>
     <div class="select_section">
       <form  action="search_data" method="get">

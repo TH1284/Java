@@ -22,7 +22,7 @@ public class Seasonality {
 
 	}
 
-	public Seasonality(String REGIONSEG1, String PRODUCTSEG1, String PRODUCTSEG2, String REGIONSEG2, String REGIONSEG3,
+	public Seasonality(String REGIONSEG1, String PRODUCTSEG2, String REGIONSEG2, String REGIONSEG3,
 			String PRODUCTSEG3, int YEARWEEK, int YEAR, int WEEK, double QTY, double MA, double SEASONALITY,
 			double FCST, double NEW_SEASONALITY, double NEW_FCST) {
 //		this.IDX = IDX;
